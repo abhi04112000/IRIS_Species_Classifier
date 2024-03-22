@@ -7,7 +7,12 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
 import matplotlib.pyplot as plt
-
+# Set page configuration
+st.set_page_config(
+    page_title="Iris Species Classification App",
+    page_icon="🌸",
+    layout="wide",
+)
 # Function to load the model
 def load_models():
     try:
